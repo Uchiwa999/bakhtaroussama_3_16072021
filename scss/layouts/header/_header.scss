@@ -1,0 +1,131 @@
+/*pour le body*/
+*{
+    padding: 0;
+    margin: 0;
+}
+/**/
+
+/*header elements*/
+.header__logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.header__logo img{
+    width: 170px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.header__localisation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2E2E2;
+    height: 45px;
+    .header__localisation__icone i{
+        margin-left: -30px;
+    }
+}
+
+.header__descriptions{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE ;
+    height: 250px;
+    .header__descriptions__titre{
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 22px;
+    }
+    .header__descriptions__titre__bottoms{
+        margin-left: 37px;
+    }
+    .header__descriptions__sous-titre{
+        font-size: 17px;
+    }
+    .header__descriptions__sous-titre__bottom{
+        margin-left: 37px;
+    }
+    .header__descriptions__bouton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        width: 190px;
+        height: 50px;
+        background: linear-gradient(#FF79DA, #9356DC);
+        border-radius: 20px;
+        box-shadow: 5px 5px 14px -3px rgba(0,0,0,0.68);
+    }
+    .header__descriptions__bouton p{
+        color: white;
+    }
+}
+
+
+/* main */
+
+.fonctionnement__titre p{
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+/*menu*/
+/* HEADER */
+
+.header_top_m{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
+    
+}
+.header_top_m__titre h1{
+    padding-left: 50px;
+    padding-top: 3px;
+}
+.header_top_m__icone i{
+    padding-left: 20px;
+    padding-top: 15px;
+    color: black;
+}
+
+
+.header_img_m img{
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+    
+}
+.header_img_m {
+    height: 250px;
+    width: 100%;
+}
+
+/* keyframes */
+
+
+
+  @keyframes itemAppear {
+    0% {
+      opacity:  0; 
+      
+      transform: translateY(10px);
+      
+      
+
+    }
+    100% {
+      opacity:  1;
+      
+    }
+  }
+
+  

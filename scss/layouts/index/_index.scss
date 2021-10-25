@@ -1,0 +1,1091 @@
+body{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/*loading spinner*/
+
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: loader .01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader__itemContainer{
+    display: flex;
+    width: 5rem;
+    justify-content: space-between;
+}
+
+.loader__item--1 {
+    background-color: #9356dc;
+}
+.loader__item {
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    animation: jump 1s;
+    animation-iteration-count: 1;
+}
+.loader__item--2 {
+    background-color: #ff79da;
+    animation-delay: .25s;
+}
+.loader__item--3 {
+    background-color: #99e2d0;
+    animation-delay: .5s;
+}
+
+
+/*fin loading spinner*/
+
+
+/* fonctionnement */
+.fonctionnement__titre{
+    margin-bottom: 20px;
+}
+
+/* Restaurants */
+.restaurants__titre{
+    font-weight: bold;
+    font-size: 23px;
+    margin-bottom: 25px;
+    margin-left: 15px;
+    width: 100%;
+}
+
+.restaurants{
+    background-color: #F6F6F6;
+    padding: 10px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    .restaurants__carte{
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 14px -3px rgba(0,0,0,0.29);
+    }
+    .restaurants__carte img{
+    height: 160px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    }
+}
+.main{
+    position: relative;
+}
+.bordur_top{
+    background-color: red;
+    height: 200px;
+    position: absolute;
+    width: 200px;
+
+}
+
+/*restaurant carte position*/
+.restaurants__carte{
+    position: relative;
+    
+}
+/*restaurants nouveau*/
+.restaurants__carte__image__nouveau{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    bottom: 0;
+}
+
+.restaurants__carte__image__nouveau{
+    color: #139273;
+    background-color: #99E2D0;
+    height: 30px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    
+}
+
+/*restaurants carte affichage*/
+.restaurants__carte__description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.restaurants__carte__description__content p{
+    font-size: 19px;
+    padding-left: 13px;
+    padding-top: 5px;
+}
+.restaurants__carte__descriptions__coeur i{
+    font-size: 25px;
+    padding: 13px;
+    
+}
+
+
+/* MAIN menu */
+
+.main_m{
+    background-color: #f6f6f6;
+    height: 1100px;
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+
+
+
+
+/**titre**/
+
+.main_top_m{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.main_top_titre_m{
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-size: 27px;
+    margin-top: 24px;
+    margin-left: 15px;
+    width: 214px;
+}
+.main_top_coeur_m{
+    margin-top: 30px;
+    margin-right: 30px;
+}
+.main_top_coeur_m i{
+    font-size: 20px;
+}
+
+
+/*entrees*/
+.main_plats_contenu_m{
+    display: flex;
+    flex-direction: row;
+   // justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 70px;
+    animation: itemAppear 0.8s ease-in;
+    //font-size: 14px;
+}
+
+/*delais animation entrees plats desserts*/
+.main_plats_m div:nth-child(3){
+
+    //animation-delay: 0;
+}
+.main_plats_m div:nth-child(4){
+   
+    animation-delay: 100ms;
+}.main_plats_m div:nth-child(5){
+   
+    animation-delay: 200ms;
+}
+
+
+/*titre et description tailles et affichage*/
+.main_plats_titre_m{
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+
+.main_plats_contenu_left_m{
+    margin: 10px; 
+    width: 60%;
+}
+.main_plats_contenu_left_m p{
+    padding: 0 0 0 5px;
+    //display: flex;
+    //overflow: hidden;
+    white-space: nowrap;
+    //text-overflow: ellipsis;
+    //background-color: blue;
+    font-size: 14px;
+}
+.main_plats_contenu_left_m .bold p{
+    font-size: 16px;
+}
+.main_plats_contenu_right_m p{
+    display: flex;
+    margin-top: 30px;
+    margin-right: 10px;
+    
+}
+.bold{
+    font-weight: bold;
+}
+
+.main_plats_contenu_right_m{
+    //background-color: brown;
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    //background-color: royalblue;
+    -webkit-transform: translateX(0%);
+}
+.main_plats_contenu_right_m:hover{
+//    animation: slide-in-right 1s ease-in-out;
+}
+
+
+/** price **/
+
+
+.price_a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    //padding-right: 4px;
+}
+.price_a1{
+    /*palette du gout*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.price_a2{
+    /*palette du gout*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    
+}
+.price_a3{
+    /*a la française*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 5px;
+}
+.price_b{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 1px;
+}
+.price_c{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+.price_c1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    
+}
+.price_c2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 1px;
+}
+.price_d{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+.price_e{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+.price_f{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.price_g{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.price_h{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+.price_i{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+
+/*price le delice des sens*/
+
+.price_aa{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_aa{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_bb{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+.main_plats_contenu_m:hover .price_bb{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_cc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_cc{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_dd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+}
+.main_plats_contenu_m:hover .price_dd{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+
+.price_ee{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_ee{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_ff{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_ff{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_gg{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_gg{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_hh{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_hh{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+.price_ii{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    -webkit-transform: translateX(260%);
+    height: 70px;
+    font-weight: bold;
+    padding-right: 4px;
+}
+.main_plats_contenu_m:hover .price_ii{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+
+
+
+/*hover price*/
+
+.main_plats_contenu_m:hover .price_a{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_a1{
+    /*palette du gout*/
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_a2{
+    /*note enchantee*/
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_a3{
+    /*a la française*/
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_b{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_c{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_c1{
+    /*note enchantee*/
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_c2{
+    /*note enchantee*/
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_d{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_e{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_f{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_g{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_h{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+.main_plats_contenu_m:hover .price_i{
+    -webkit-transform: translateX(0);
+    transition: 1s all;
+}
+/** end price **/
+
+.main_plats_container{
+    background-color: #99E2D0;
+    height: 70px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transform: translateX(105%);
+    transition: 1s all;
+    background-color: #99E2D0;
+    border-radius: 10px;
+    
+}
+.main_plats_container i {
+    color: white;
+}
+.main_plats_contenu_m:hover .main_plats_container{
+    -webkit-transform: translateX(0); 
+    //background-color:red;
+    border-radius: 0 10px 10px 0;
+}
+
+.main_plats_contenu_m:hover .main_plats_animation i{
+   animation: rotate_i 1s;
+}
+
+.main_plats_contenu_m:hover .main_plats_contenu_left_m p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*padding des menu*/
+.main_plats_m{
+    padding: 0 10px 0 10px;
+}
+    
+
+/* media queries*/
+
+
+@media screen and (min-width: 321px) and (max-width:375px){
+    
+
+    .header_top_m__titre h1{
+        padding-left: 90px;
+    }
+    .price_a{
+        padding-right: 13px;
+    }
+    .price_a1{
+        padding-right: 13px;
+    }
+    .price_a2{
+        padding-right: 8px;
+    }
+    .price_a3{
+        padding-right: 13px;
+    }
+    .price_b{
+        padding-right: 13px;
+    }
+    .price_c{
+        padding-right: 8px;
+    }
+    .price_c1{
+        padding-right: 10px;
+    }
+    .price_c2{
+        padding-right: 10px;
+    }
+    .price_d{
+        padding-right: 9px;
+    }
+    .price_e{
+        padding-right: 9px;
+    }
+    .price_f{
+        padding-right: 13px;
+    }
+    .price_g{
+        padding-right: 13px;
+    }
+    .price_h{
+        padding-right: 9px;
+    }
+    .price_i{
+        padding-right: 9px;
+    }
+
+
+    /*le delice des sens*/
+
+    .price_aa{
+        padding-right: 13px;
+    }
+    .price_bb{
+        padding-right: 9px;
+    }
+    .price_cc{
+        padding-right: 13px;
+    }
+    .price_dd{
+        padding-right: 9px;
+    }
+    .price_ee{
+        padding-right: 13px;
+    }
+    .price_ff{
+        padding-right: 13px;
+    }
+    .price_gg{
+        padding-right: 13px;
+    }
+    .price_hh{
+        padding-right: 13px;
+    }
+    .price_ii{
+        padding-right: 13px;
+    }
+
+}
+
+@media screen and (min-width: 376px) and (max-width:425px){
+   
+    .header_top_m__titre h1{
+        padding-left: 110px;
+    }
+    .price_a{
+        padding-right: 21px;
+    }
+    .price_a1{
+        padding-right: 21px;
+    }
+    .price_a2{
+        padding-right: 21px;
+    }
+    .price_a3{
+        padding-right: 21px;
+    }
+    .price_b{
+        padding-right: 21px;
+    }
+    .price_c{
+        padding-right: 16px;
+    }
+    .price_c1{
+        padding-right: 21px;
+    }
+    .price_c2{
+        padding-right: 21px;
+    }
+    .price_d{
+        padding-right: 17px;
+    }
+    .price_e{
+        padding-right: 21px;
+    }
+    .price_f{
+        padding-right: 21px;
+    }
+    .price_g{
+        padding-right: 21px;
+    }
+    .price_h{
+        padding-right: 21px;
+    }
+    .price_i{
+        padding-right: 21px;
+    }
+
+     /*le delice des sens*/
+
+     .price_aa{
+        padding-right: 21px;
+    }
+    .price_bb{
+        padding-right: 21px;
+    }
+    .price_cc{
+        padding-right: 21px;
+    }
+    .price_dd{
+        padding-right: 17px;
+    }
+    .price_ee{
+        padding-right: 21px;
+    }
+    .price_ff{
+        padding-right: 21px;
+    }
+    .price_gg{
+        padding-right: 21px;
+    }
+    .price_hh{
+        padding-right: 21px;
+    }
+    .price_ii{
+        padding-right: 21px;
+    }
+
+
+}
+
+@media screen and (min-width: 426px) and (max-width:768px){
+    
+    .header_top_m__titre h1{
+        padding-left: 270px;
+    }
+    .price_a{
+        padding-right: 74px;
+    }
+    .price_a1{
+        padding-right: 74px;
+    }
+    .price_a2{
+        padding-right: 74px;
+    }
+    .price_a3{
+        padding-right: 74px;
+    }
+    .price_b{
+        padding-right: 74px;
+    }
+    .price_c{
+        padding-right: 74px;
+    }
+    .price_c1{
+        padding-right: 74px;
+    }
+    .price_c2{
+        padding-right: 74px;
+    }
+    .price_d{
+        padding-right: 74px;
+    }
+    .price_e{
+        padding-right: 74px;
+    }
+    .price_f{
+        padding-right: 74px;
+    }
+    .price_g{
+        padding-right: 74px;
+    }
+    .price_h{
+        padding-right: 74px;
+    }
+    .price_i{
+        padding-right: 74px;
+    }
+
+     /*le delice des sens*/
+
+     .price_aa{
+        padding-right: 74px;
+    }
+    .price_bb{
+        padding-right: 74px;
+    }
+    .price_cc{
+        padding-right: 74px;
+    }
+    .price_dd{
+        padding-right: 74px;
+    }
+    .price_ee{
+        padding-right: 74px;
+    }
+    .price_ff{
+        padding-right: 74px;
+    }
+    .price_gg{
+        padding-right: 74px;
+    }
+    .price_hh{
+        padding-right: 74px;
+    }
+    .price_ii{
+        padding-right: 74px;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px){
+    
+    .header_top_m__titre h1{
+        padding-left: 400px;
+    }
+    .price_a{
+        padding-right: 113px;
+    }
+    .price_a1{
+        padding-right: 113px;
+    }
+    .price_a2{
+        padding-right: 113px;
+    }
+    .price_a3{
+        padding-right: 113px;
+    }
+    .price_b{
+        padding-right: 113px;
+    }
+    .price_c{
+        padding-right: 113px;
+    }
+    .price_c1{
+        padding-right: 113px;
+    }
+    .price_c2{
+        padding-right: 113px;
+    }
+    .price_d{
+        padding-right: 113px;
+    }
+    .price_e{
+        padding-right: 113px;
+    }
+    .price_f{
+        padding-right: 113px;
+    }
+    .price_g{
+        padding-right: 113px;
+    }
+    .price_h{
+        padding-right: 113px;
+    }
+    .price_i{
+        padding-right: 113px;
+    }
+
+     /*le delice des sens*/
+
+     .price_aa{
+        padding-right: 113px;
+    }
+    .price_bb{
+        padding-right: 113px;
+    }
+    .price_cc{
+        padding-right: 113px;
+    }
+    .price_dd{
+        padding-right: 113px;
+    }
+    .price_ee{
+        padding-right: 113px;
+    }
+    .price_ff{
+        padding-right: 113px;
+    }
+    .price_gg{
+        padding-right: 113px;
+    }
+    .price_hh{
+        padding-right: 113px;
+    }
+    .price_ii{
+        padding-right: 113px;
+    }
+
+
+}
+
+/* fin media queries */
+
+
+
+
+
+
+/*coeur*/
+.main_top_coeur_m i:nth-child(1){
+    margin-right: -23px;
+    opacity: 0;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text; 
+    //text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.main_top_coeur_m:nth-child(2){
+    opacity: 1;
+}
+.main_top_coeur_m i:nth-child(1):hover{
+    opacity: 1;
+    position: absolute;
+    //animation: coeur 1s ease;
+    
+}
+
+
+
+
+
+
+
+
+/**animation coeur**/
+
+
+
+.restaurants__carte__descriptions__coeur i:nth-child(1){
+    margin-right: -55px;
+    opacity: 0;
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text; 
+    //text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.restaurants__carte__descriptions__coeur i:nth-child(2){
+    opacity: 1;
+}
+.restaurants__carte__descriptions__coeur i:nth-child(1):hover{
+    opacity: 1;
+    position: absolute;
+    //animation: coeur 1s ease;
+    
+}
+
+
+/*animation coeur*/
+@keyframes coeur{
+    0%{
+        opacity: 0;
+
+    }
+    90%{
+        opacity: 1;
+
+        color: #FF79DA;
+    }
+    100%{
+        opacity: 1;
+        color: #9356DC;
+       
+    }
+}
+
+
+
+
+
+/**animation icone rotate**/
+@keyframes rotate_i {
+    from {
+        transform: rotateZ(0);
+      }
+    
+      to {
+        transform: rotateZ(720deg);
+      }
+}
+
+/*animation loading spinner*/
+@keyframes loader{
+    100%{
+        opacity: 0;
+        z-index: -10;
+    }
+    
+}
+/*animation des 3 boules de couleurs loading spinner*/
+@keyframes jump{
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(.5rem);
+    }
+    75% {
+        transform: translateY(-.5rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+  
+    

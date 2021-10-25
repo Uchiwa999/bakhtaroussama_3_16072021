@@ -1,0 +1,12 @@
+/*Les 3 couleurs primaire de la charte graphique*/
+
+@mixin primaire {
+    color: #9356DC;
+}
+@mixin secondaire {
+   color: #FF79DA;
+}
+@mixin tertiaire {
+    color: #99E2D0;
+}
+

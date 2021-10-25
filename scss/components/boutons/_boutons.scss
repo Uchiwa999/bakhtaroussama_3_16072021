@@ -1,0 +1,137 @@
+/*bouton onctionnement*/
+
+.fonctionnement__btn{
+    display: flex;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: #F6F6F6;
+    box-shadow: 5px 5px 14px -3px rgba(0,0,0,0.29);
+    .fonctionnement__btn__nombre{
+        border-radius: 100%;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -20px;
+        
+    }
+    .fonctionnement__btn__nombre p{
+        margin-left: -80px;
+        border-radius: 100%;
+        background-color: #AE80E5;
+        height: 20px;
+        width: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    .fonctionnement__btn__description{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .fonctionnement__btn__description i{
+        color: #7E7E7E;
+    }
+    .fonctionnement__btn__description p{
+        margin-left: 30px;
+    }
+}
+
+
+/*bouton main*/
+
+.main_boutton_m{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 190px;
+    height: 50px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 20px;
+    box-shadow: 5px 5px 14px -3px rgba(0,0,0,0.68);
+}
+.main_boutton_m p{
+    color: white;
+}
+
+
+/*bouton la note enchantée*/
+.main_boutton_m2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    width: 190px;
+    height: 50px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    border-radius: 20px;
+    box-shadow: 5px 5px 14px -3px rgba(0,0,0,0.68);
+}
+.main_boutton_m2 p{
+    color: white;
+}
+.main_boutton_m2{
+    height: 50px;
+    width: 150px;
+    background-color: violet;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: -60px;
+    //margin-left: 85px;
+}
+
+.main_boutton_m1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    
+}
+
+/*boutton*/
+.main_boutton_m{
+    height: 50px;
+    width: 150px;
+    background-color: violet;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    //margin-top: -60px;
+    //margin-left: 85px;
+}
+.header__descriptions__bouton:hover{
+    filter: brightness(110%);
+    box-shadow: 7px 7px 16px -3px rgb(0 0 0 / 68%);
+}
+.main_boutton_m:hover{
+    filter: brightness(110%);
+    box-shadow: 7px 7px 16px -3px rgb(0 0 0 / 68%);
+}
+.fonctionnement__btn:hover{
+    filter: brightness(106%);
+    box-shadow: 7px 7px 16px -3px rgb(0 0 0 / 68%);
+}
+
+
+.main_boutton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 170px;
+    
+}
+
+
+

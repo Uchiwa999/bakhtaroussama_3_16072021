@@ -1,0 +1,19 @@
+{
+  "name": "p3_bakhtar_oussama",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./scss/main.scss:./css/style.css --no-source-map -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uchiwa999/bakhtaroussama_3_16072021.github.iot"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uchiwa999/bakhtaroussama_3_16072021/issues"
+  },
+  "homepage": "https://github.com/Uchiwa999/bakhtaroussama_3_16072021#readme"
+}
